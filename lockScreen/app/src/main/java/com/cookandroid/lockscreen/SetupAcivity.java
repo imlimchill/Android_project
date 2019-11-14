@@ -47,14 +47,14 @@ public class SetupAcivity extends Activity {
            }
        });
 
-//       btnY.setOnClickListener(new View.OnClickListener() {
-//           @Override
-//           public void onClick(View view) {
-//               Toast.makeText(getApplicationContext(), "화면을 보자", Toast.LENGTH_SHORT).show();
-//               Intent intent = new Intent(getApplicationContext(), LockScreenAcitity.class);
-//               startActivity(intent);
-//           }
-//       });
+       btnY.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Toast.makeText(getApplicationContext(), "화면을 보자", Toast.LENGTH_SHORT).show();
+               Intent intent = new Intent(getApplicationContext(), LockActivity.class);
+               startActivity(intent);
+           }
+       });
 
     }
 

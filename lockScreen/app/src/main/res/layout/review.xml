@@ -134,7 +134,7 @@
 
         <Button
             android:id="@+id/btnAnswer01"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#e5edca"
@@ -145,7 +145,7 @@
 
         <Button
             android:id="@+id/btnAnswer02"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#FFFFFF"
@@ -163,7 +163,7 @@
 
         <Button
             android:id="@+id/btnAnswer03"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#FFFFFF"
@@ -174,7 +174,7 @@
 
         <Button
             android:id="@+id/btnAnswer04"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#e5edca"

@@ -24,7 +24,7 @@
         <activity android:name=".SetupAcivity" android:label="설정"></activity>
         <activity android:name=".Review" android:label="일단 이게 복습"></activity>
         <activity android:name=".LockActivity" android:label="잠금화면"></activity>
-        <activity android:name=".DataBase" android:label="데이터베이스 테스트"></activity>
+        <activity android:name=".DataActivity"></activity>
         <receiver android:name=".ScreenReceiver"></receiver>
         <service android:name=".ScreenService"></service>
 

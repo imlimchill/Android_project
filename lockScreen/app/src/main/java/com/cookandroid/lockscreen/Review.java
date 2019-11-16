@@ -21,14 +21,15 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Random;
 
 public class Review extends Activity {
 
     /** 단어 저장된 배열 */
-    static String[] words = new String[11];
-    static String[] meaning = new String[11];
+    static String[] words = new String[200];
+    static String[] meaning = new String[200];
 
     TextView tvWord;
 
@@ -41,7 +42,9 @@ public class Review extends Activity {
 
     Random rm = new Random();
 
-    int pos = 1;
+    // 날짜는 pos로 구분한다.
+    int pos = 0;
+    int cnt = 1;
     int[] random = new int[4];
 
     /** 정답을 맞췄는지 틀렸는지를 저장할 배열 선언 */
@@ -73,11 +76,30 @@ public class Review extends Activity {
         btnAnswer3.setText(meaning[pos]);
         btnAnswer4.setText(meaning[4]);
 
+        random[0] = 5;
+        random[1] = 3;
+        random[2] = pos;
+        random[3] = 4;
+
 
         btnAnswer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvCounts[pos].setVisibility(View.VISIBLE);
+                if (cnt != 10) {
+                    tvCounts[cnt].setVisibility(View.VISIBLE);
+                }
+                cnt++;
+
+                if (pos == random[0]){
+                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
+                    if(pos != 10) {
+                        isCorrect[pos] = true;
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "오답" + pos + random[0], Toast.LENGTH_SHORT).show();
+                    //isCorrect[pos] = false;
+                }
+
                 pos++;
 
                 for (int idx = 0; idx < 4; idx++) {
@@ -94,14 +116,36 @@ public class Review extends Activity {
                 int cor = rm.nextInt(3);
                 random[cor] = pos;
 
-                if (pos == 10) {
-                    // 만약 안보내지면 그 값 여기서 for문으로 다르네에 저장해보자
-                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-//                    intent.putExtra("correct", isCorrect); // 정답과 오답
-                    startActivity(intent);
+                if (cnt != 11) {
+                    tvWord.setText("" + words[pos]);
+                    btnAnswer1.setText("" + meaning[random[0]]);
+                    btnAnswer2.setText("" + meaning[random[1]]);
+                    btnAnswer3.setText("" + meaning[random[2]]);
+                    btnAnswer4.setText("" + meaning[random[3]]);
                 }
 
-                if (pos == random[0]){
+                if (cnt == 11) {
+                    boolean[] isCorr = new boolean[11];
+                    for (int idx = 1; idx < 11; idx++) {
+                        isCorr[idx] = isCorrect[idx - 1];
+                    }
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("pos", pos - 8);
+                    intent.putExtra("correct", isCorr); // 정답과 오답
+                    startActivity(intent);
+                }
+            }
+        });
+
+        btnAnswer2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (cnt != 10) {
+                    tvCounts[cnt].setVisibility(View.VISIBLE);
+                }
+                cnt++;
+
+                if (pos == random[1]){
                     Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
                     if(pos != 10) {
                         isCorrect[pos] = true;
@@ -111,13 +155,154 @@ public class Review extends Activity {
                     //isCorrect[pos] = false;
                 }
 
-                tvWord.setText("" + words[pos]);
-                btnAnswer1.setText("" + meaning[random[0]]);
-                btnAnswer2.setText("" + meaning[random[1]]);
-                btnAnswer3.setText("" + meaning[random[2]]);
-                btnAnswer4.setText("" + meaning[random[3]]);
+                pos++;
+
+                for (int idx = 0; idx < 4; idx++) {
+                    random[idx] = rm.nextInt(9);
+                    if (idx != 0) {
+                        for (int ind = idx - 1; ind >= 0; ind--) {
+                            if (random[ind] == random[idx] || random[idx] == pos) {
+                                idx--;
+                                continue;
+                            }
+                        }
+                    }
+                }
+                int cor = rm.nextInt(3);
+                random[cor] = pos;
+
+                if (cnt != 11) {
+                    tvWord.setText("" + words[pos]);
+                    btnAnswer1.setText("" + meaning[random[0]]);
+                    btnAnswer2.setText("" + meaning[random[1]]);
+                    btnAnswer3.setText("" + meaning[random[2]]);
+                    btnAnswer4.setText("" + meaning[random[3]]);
+                }
+
+                if (cnt == 11) {
+                    boolean[] isCorr = new boolean[11];
+                    for (int idx = 1; idx < 11; idx++) {
+                        isCorr[idx] = isCorrect[idx - 1];
+                    }
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("pos", pos - 8);
+                    intent.putExtra("correct", isCorr); // 정답과 오답
+                    startActivity(intent);
+                }
             }
         });
+
+        btnAnswer3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (cnt != 10) {
+                    tvCounts[cnt].setVisibility(View.VISIBLE);
+                }
+                cnt++;
+
+                if (pos == random[2]){
+                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
+                    if(pos != 10) {
+                        isCorrect[pos] = true;
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
+                    //isCorrect[pos] = false;
+                }
+
+                pos++;
+
+                for (int idx = 0; idx < 4; idx++) {
+                    random[idx] = rm.nextInt(9);
+                    if (idx != 0) {
+                        for (int ind = idx - 1; ind >= 0; ind--) {
+                            if (random[ind] == random[idx] || random[idx] == pos) {
+                                idx--;
+                                continue;
+                            }
+                        }
+                    }
+                }
+                int cor = rm.nextInt(3);
+                random[cor] = pos;
+
+                if (cnt != 11) {
+                    tvWord.setText("" + words[pos]);
+                    btnAnswer1.setText("" + meaning[random[0]]);
+                    btnAnswer2.setText("" + meaning[random[1]]);
+                    btnAnswer3.setText("" + meaning[random[2]]);
+                    btnAnswer4.setText("" + meaning[random[3]]);
+                }
+
+                if (cnt == 11) {
+                    boolean[] isCorr = new boolean[11];
+                    for (int idx = 1; idx < 11; idx++) {
+                        isCorr[idx] = isCorrect[idx - 1];
+                    }
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("pos", pos - 8);
+                    intent.putExtra("correct", isCorr); // 정답과 오답
+                    startActivity(intent);
+                }
+            }
+        });
+
+        btnAnswer4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (cnt != 10) {
+                    tvCounts[cnt].setVisibility(View.VISIBLE);
+                }
+                cnt++;
+
+                if (pos == random[3]){
+                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
+                    if(pos != 10) {
+                        isCorrect[pos] = true;
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
+                    //isCorrect[pos] = false;
+                }
+
+                pos++;
+
+                for (int idx = 0; idx < 4; idx++) {
+                    random[idx] = rm.nextInt(9);
+                    if (idx != 0) {
+                        for (int ind = idx - 1; ind >= 0; ind--) {
+                            if (random[ind] == random[idx] || random[idx] == pos) {
+                                idx--;
+                                continue;
+                            }
+                        }
+                    }
+                }
+                int cor = rm.nextInt(3);
+                random[cor] = pos;
+
+                if (cnt != 11) {
+                    tvWord.setText("" + words[pos]);
+                    btnAnswer1.setText("" + meaning[random[0]]);
+                    btnAnswer2.setText("" + meaning[random[1]]);
+                    btnAnswer3.setText("" + meaning[random[2]]);
+                    btnAnswer4.setText("" + meaning[random[3]]);
+                }
+
+                if (cnt == 11) {
+                    boolean[] isCorr = new boolean[11];
+                    for (int idx = 1; idx < 11; idx++) {
+                        isCorr[idx] = isCorrect[idx - 1];
+                    }
+                    Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
+                    intent.putExtra("pos", pos - 8);
+                    intent.putExtra("correct", isCorr); // 정답과 오답
+                    startActivity(intent);
+                }
+            }
+        });
+
+
     }
 
 

@@ -39,7 +39,6 @@ public class LockActivity extends Activity {
 
         setContentView(R.layout.lock);
 
-
         /** 단어와 답, 오답의 초기화 */
         tvWord = (TextView)findViewById(R.id.tvWord);
         btnAnswer1 = (Button)findViewById(R.id.btnAnswer1);
@@ -50,9 +49,9 @@ public class LockActivity extends Activity {
 //        btnAnswer1.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-////                if(btnAnswer1.getText().equals(??)) {
-////                    Toast.makeText(getApplicationContext(), "정답입니다.", Toast.LENGTH_SHORT).show();
-////                    // TODO 종료
+//               // if(btnAnswer1.getText().equals(??)) {
+//                    Toast.makeText(getApplicationContext(), "정답입니다.", Toast.LENGTH_SHORT).show();
+//                    // TODO 종료
 ////                } else {
 ////                    Toast.makeText(getApplicationContext(), "오답입니다. 다시 시도해보세요.", Toast.LENGTH_SHORT).show();
 ////                }

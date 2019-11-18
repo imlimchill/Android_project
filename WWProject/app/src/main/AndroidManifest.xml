@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TodayActivity" android:label="오늘의 공부"/>
+        <activity android:name=".ToReviewActivity" android:label="오늘 공부의 단어 공부화면"/>
+        <activity android:name=".ToReslutActivity" android:label="오늘 공부의 단어 리스트 화면"/>
+
     </application>
 
 </manifest>

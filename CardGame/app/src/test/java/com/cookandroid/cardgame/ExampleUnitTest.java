@@ -1,4 +1,4 @@
-package com.example.cardgame;
+package com.cookandroid.cardgame;
 
 import org.junit.Test;
 

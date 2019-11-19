@@ -30,6 +30,21 @@
         <receiver android:name=".LockScreenReceiver"/>
         <service android:name=".LockScreenService"/>
 
+        <activity android:name=".AlarmActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog"/>
+
+
+        <receiver android:name=".BootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".ReceiverActivity"/>
+
+
+
     </application>
 
 </manifest>

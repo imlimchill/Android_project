@@ -81,22 +81,11 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.push:
 
-                TimePickerDialog.OnTimeSetListener mTimeSetListener =
-                        new TimePickerDialog.OnTimeSetListener() {
-                            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-                                Toast.makeText(getApplicationContext(),
-                                        hourOfDay + " 시" + minute + "분", Toast.LENGTH_SHORT)
-                                        .show();
-                                // 그거 관련 적어면 됨
-                            }
-                        };
-
-                TimePickerDialog oDialog = new TimePickerDialog(this,
-                        android.R.style.Theme_DeviceDefault_Light_Dialog,
-                        mTimeSetListener, 0, 0, false);
-                oDialog.show();
+                Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
+                startActivity(intent);
 
                 return true;
+
             case R.id.lockScreen:
                 final AlertDialog.Builder dayDialog = new AlertDialog.Builder(MainActivity.this, android.R.style.Theme_DeviceDefault_Light_Dialog);
 

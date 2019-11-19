@@ -26,6 +26,10 @@
 
         <activity android:name=".CardGameActivity" android:label="카드게임 테스트"/>
 
+        <activity android:name=".LockActivity" android:label="잠금화면"/>
+        <receiver android:name=".LockScreenReceiver"/>
+        <service android:name=".LockScreenService"/>
+
     </application>
 
 </manifest>

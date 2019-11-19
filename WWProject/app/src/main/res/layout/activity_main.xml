@@ -14,11 +14,12 @@
         android:background="@android:color/holo_orange_light"
         android:orientation="vertical">
 
-        <ImageButton
-                android:id="@+id/intentNAbtn"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            app:srcCompat="@android:color/holo_green_light" />
+        <ImageView
+            android:id="@+id/menuIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/menu_icon"/>
     </LinearLayout>
 
     <LinearLayout

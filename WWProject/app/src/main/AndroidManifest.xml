@@ -17,8 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".TodayActivity" android:label="오늘의 공부"/>
-        <activity android:name=".ToReviewActivity" android:label="오늘 공부의 단어 공부화면"/>
-        <activity android:name=".ToReslutActivity" android:label="오늘 공부의 단어 리스트 화면"/>
+        <activity android:name=".ToReviewActivity" android:label="오늘 공부의 단어 공부"/>
+        <activity android:name=".ToReslutActivity" android:label="오늘 공부의 단어 리스트"/>
+
+        <activity android:name=".DayListActivity" android:label="복습할 날짜 구하기"/>
+        <activity android:name=".DayReviewActivity" android:label="복습하기"/>
+        <activity android:name=".DayResultActivity" android:label="복습 결과"/>
+
+        <activity android:name=".CardGameActivity" android:label="카드게임 테스트"/>
 
     </application>
 

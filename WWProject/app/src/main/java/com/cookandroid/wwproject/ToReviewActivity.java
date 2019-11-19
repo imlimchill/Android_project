@@ -111,8 +111,6 @@ public class ToReviewActivity extends Activity {
                 // count 가 몇인지 모름
                 if (count == 10) {
                     Intent resultIntent = new Intent(getApplicationContext(), ToReslutActivity.class);
-                    //intent.putExtra("words", wordss);
-                    //intent.putExtra("meanings", meanings);
                     startActivity(resultIntent);
                 }
                 if (count != 10) {
@@ -135,8 +133,6 @@ public class ToReviewActivity extends Activity {
                 // count 가 몇인지 모름
                 if (count == 10) {
                     Intent resultIntent = new Intent(getApplicationContext(), ToReslutActivity.class);
-                    //intent.putExtra("words", wordss);
-                    //intent.putExtra("meanings", meanings);
                     startActivity(resultIntent);
                 }
                 if (count != 10) {
@@ -159,8 +155,6 @@ public class ToReviewActivity extends Activity {
                 // count 가 몇인지 모름
                 if (count == 10) {
                     Intent resultIntent = new Intent(getApplicationContext(), ToReslutActivity.class);
-                    //intent.putExtra("words", wordss);
-                    //intent.putExtra("meanings", meanings);
                     startActivity(resultIntent);
                 }
                 if (count != 10) {
@@ -183,8 +177,6 @@ public class ToReviewActivity extends Activity {
                 // count 가 몇인지 모름
                 if (count == 10) {
                     Intent resultIntent = new Intent(getApplicationContext(), ToReslutActivity.class);
-                    //intent.putExtra("words", wordss);
-                    //intent.putExtra("meanings", meanings);
                     startActivity(resultIntent);
                 }
                 if (count != 10) {

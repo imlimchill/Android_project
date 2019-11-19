@@ -33,5 +33,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        btnToWord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), DayListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        btnWordTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CardGameActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

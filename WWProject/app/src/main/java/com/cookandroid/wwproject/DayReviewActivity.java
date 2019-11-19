@@ -91,7 +91,7 @@ public class DayReviewActivity extends Activity {
 
                 if (pos == random[0]){
                     Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
-                    if(pos != 10) {
+                    if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
@@ -102,9 +102,9 @@ public class DayReviewActivity extends Activity {
                 pos++;
 
                 for (int idx = 0; idx < 4; idx++) {
-                    random[idx] = rm.nextInt(9);
+                    random[idx] = rm.nextInt(49);
                     if (idx != 0) {
-                        for (int ind = idx - 1; ind >= 0; ind--) {
+                        for (int ind = 0; ind < idx; ind++) {
                             if (random[ind] == random[idx] || random[idx] == pos) {
                                 idx--;
                                 continue;
@@ -146,7 +146,7 @@ public class DayReviewActivity extends Activity {
 
                 if (pos == random[1]){
                     Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
-                    if(pos != 10) {
+                    if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
@@ -157,9 +157,9 @@ public class DayReviewActivity extends Activity {
                 pos++;
 
                 for (int idx = 0; idx < 4; idx++) {
-                    random[idx] = rm.nextInt(9);
+                    random[idx] = rm.nextInt(49);
                     if (idx != 0) {
-                        for (int ind = idx - 1; ind >= 0; ind--) {
+                        for (int ind = 0; ind < idx; ind++) {
                             if (random[ind] == random[idx] || random[idx] == pos) {
                                 idx--;
                                 continue;
@@ -201,7 +201,7 @@ public class DayReviewActivity extends Activity {
 
                 if (pos == random[2]){
                     Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
-                    if(pos != 10) {
+                    if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
@@ -212,9 +212,9 @@ public class DayReviewActivity extends Activity {
                 pos++;
 
                 for (int idx = 0; idx < 4; idx++) {
-                    random[idx] = rm.nextInt(9);
+                    random[idx] = rm.nextInt(49);
                     if (idx != 0) {
-                        for (int ind = idx - 1; ind >= 0; ind--) {
+                        for (int ind = 0; ind < idx; ind++) {
                             if (random[ind] == random[idx] || random[idx] == pos) {
                                 idx--;
                                 continue;
@@ -256,7 +256,7 @@ public class DayReviewActivity extends Activity {
 
                 if (pos == random[3]){
                     Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
-                    if(pos != 10) {
+                    if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
@@ -267,9 +267,9 @@ public class DayReviewActivity extends Activity {
                 pos++;
 
                 for (int idx = 0; idx < 4; idx++) {
-                    random[idx] = rm.nextInt(9);
+                    random[idx] = rm.nextInt(49);
                     if (idx != 0) {
-                        for (int ind = idx - 1; ind >= 0; ind--) {
+                        for (int ind = 0; ind < idx; ind++) {
                             if (random[ind] == random[idx] || random[idx] == pos) {
                                 idx--;
                                 continue;

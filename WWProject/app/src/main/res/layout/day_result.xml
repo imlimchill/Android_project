@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fef8f4"
     >
 
     <TextView
@@ -13,7 +14,7 @@
         android:text="결과"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="90dp"/>
+        android:textSize="30dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -23,12 +24,34 @@
         android:textColor="#000000"
         android:textSize="20dp"/>
 
-    <ListView
-        android:id="@+id/listCorrect"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_margin="20dp" />
+        android:layout_margin="30dp"
+        android:background="#fef8f4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#aa6f6f">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fef8f4">
+
+                <ListView
+                    android:id="@+id/listCorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -38,11 +61,34 @@
         android:textColor="#000000"
         android:textSize="20dp"/>
 
-    <ListView
-        android:id="@+id/listWrong"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:layout_margin="20dp"/>
+        android:layout_margin="30dp"
+        android:background="#fef8f4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#aa6f6f">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fef8f4">
+
+                <ListView
+                    android:id="@+id/listWrong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

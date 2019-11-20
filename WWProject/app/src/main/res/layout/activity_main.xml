@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:gravity="bottom"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#fef8f4">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="84dp"
-        android:background="@android:color/holo_orange_light"
         android:orientation="vertical">
 
         <ImageView
@@ -25,7 +25,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="181dp"
-        android:background="@android:color/holo_orange_light"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -34,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="131dp"
             android:gravity="center"
-            android:text="WORD 단어장"
+            android:text="EVERY WORD"
             android:textSize="50dp" />
     </LinearLayout>
 
@@ -42,8 +41,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="469dp"
-        android:background="@android:color/holo_orange_light"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -51,21 +50,30 @@
             android:id="@+id/btnToStudy"
             android:layout_width="400dp"
             android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#aa6f6f"
+            android:layout_margin="20dp"
             android:text="오늘의 공부"
-            app:backgroundTint="@color/colorPrimary" />
+            android:textSize="30dp"/>
 
         <Button
             android:id="@+id/btnToWord"
             android:layout_width="400dp"
             android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="#aa6f6f"
             android:text="오늘의 단어"
-            app:backgroundTint="@color/colorPrimary"/>
+            android:textSize="30dp"/>
         <Button
             android:id="@+id/btnWordTest"
             android:layout_width="400dp"
             android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="#aa6f6f"
             android:text="단어 테스트"
-            app:backgroundTint="@color/colorPrimary"/>
+            android:textSize="30dp"/>
 
     </LinearLayout>
 </LinearLayout>

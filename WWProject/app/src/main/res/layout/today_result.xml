@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fef8f4">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,12 +15,35 @@
         android:textSize="50dp"/>
 
 
-    <ListView
-        android:id="@+id/listCorrect"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="50dp"
-        android:layout_weight="1" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="#fef8f4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#aa6f6f">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fef8f4">
+
+                <ListView
+                    android:id="@+id/listCorrect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fef8f4"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#fef8f4">
 
     <TextView
         android:layout_width="match_parent"
@@ -16,18 +17,36 @@
         android:textSize="20dp"
         android:textStyle="bold"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:layout_margin="30dp"
+            android:background="#fef8f4">
 
-        <ListView
-            android:id="@+id/listDay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="40dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#aa6f6f">
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="#fef8f4">
+
+                    <ListView
+                        android:id="@+id/listDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
 
 </LinearLayout>

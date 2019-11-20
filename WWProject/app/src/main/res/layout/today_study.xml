@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6f6f6">
+    android:background="#fef8f4">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#e5edca">
+        android:background="#aa6f6f">
 
         <TextView
             android:id="@+id/tvCount0"
@@ -17,7 +17,7 @@
             android:layout_margin="10dp"
             android:visibility="visible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount1"
@@ -27,7 +27,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount2"
@@ -37,7 +37,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount3"
@@ -47,7 +47,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount4"
@@ -57,7 +57,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount5"
@@ -67,7 +67,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount6"
@@ -77,7 +77,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount7"
@@ -87,7 +87,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount8"
@@ -97,7 +97,7 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
         <TextView
             android:id="@+id/tvCount9"
@@ -107,114 +107,144 @@
             android:layout_margin="10dp"
             android:visibility="invisible"
             android:gravity="center"
-            android:background="#17142e" />
+            android:background="#fef8f4" />
 
     </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:background="#fef8f4">
 
-        <TextView
-            android:id="@+id/tvWord0"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="visible"
-            android:text="단어0"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            android:layout_margin="15dp"
+            android:background="#aa6f6f"
+            >
 
-        <TextView
-            android:id="@+id/tvWord1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어1"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="단어0"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어2"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어1"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어3"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어2"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어4"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어3"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어5"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어4"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어6"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어5"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord7"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어7"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어6"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord8"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어8"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어7"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvWord9"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="단어9"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvWord8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어8"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tvWord9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fef8f4"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="단어9"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+        </FrameLayout>
 
 
     </FrameLayout>
@@ -223,107 +253,137 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="2"
-        android:background="#e5edca">
+        android:background="#aa6f6f">
 
-        <TextView
-            android:id="@+id/tvMeaning0"
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="visible"
-            android:text="뜻0"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            android:layout_margin="15dp"
+            android:background="#fef8f4">
 
-        <TextView
-            android:id="@+id/tvMeaning1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻1"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="visible"
+                android:text="뜻0"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻2"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻1"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻3"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻2"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻4"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻3"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻5"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻4"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻6"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻5"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning7"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻7"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻6"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning8"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻8"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻7"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
 
-        <TextView
-            android:id="@+id/tvMeaning9"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:visibility="invisible"
-            android:text="뜻0"
-            android:textColor="#000000"
-            android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/tvMeaning8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻8"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tvMeaning9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#aa6f6f"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:text="뜻0"
+                android:textColor="#000000"
+                android:textSize="20dp"/>
+
+
+        </FrameLayout>
+
 
     </FrameLayout>
 

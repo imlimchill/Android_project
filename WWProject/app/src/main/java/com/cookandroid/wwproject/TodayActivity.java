@@ -28,23 +28,8 @@ import java.util.List;
  */
 public class TodayActivity extends Activity {
 
-    /** 오늘의 단어의 영어단어를 저장할 TextView 선언 */
-
-
-    /** 오늘의 단어의 뜻을 저장할 TextView 선언 */
-    TextView tvMeaning;
-
-    /* 받아야할 정보
-     *
-     * 1. 10개의 오늘의 단어
-     */
-
-    // TODO 뒤로 갔을 때 메인화면으로 가도록 설정
-    // TODO 데이터베이스 안드로이드 스튜디오랑 연결하기
-    // TODO 데이터베이스 단어 체우기
-
-    static String[] words = new String[200];
-    static String[] meaning = new String[200];
+    static String[] words = new String[300];
+    static String[] meaning = new String[300];
 
     GregorianCalendar today = new GregorianCalendar ( );
     int day = today.get ( today.DAY_OF_MONTH );

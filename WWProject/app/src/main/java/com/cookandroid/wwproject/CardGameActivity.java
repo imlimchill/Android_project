@@ -1,5 +1,6 @@
 package com.cookandroid.wwproject;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,8 +21,8 @@ import java.util.Random;
 
 public class CardGameActivity extends AppCompatActivity {
 
-    static String[] words = new String[200];
-    static String[] meaning = new String[200];
+    static String[] words = new String[300];
+    static String[] meaning = new String[300];
 
     GregorianCalendar today = new GregorianCalendar ( );
     int day = today.get ( today.DAY_OF_MONTH );
@@ -556,6 +558,9 @@ public class CardGameActivity extends AppCompatActivity {
                 btnResult.setVisibility(View.VISIBLE);
 
                 for(int idx = 0; idx < 5; idx++) {
+                    int color = Color.parseColor("#fef8f4");
+                    wordCards[idx].setBackgroundColor(color);
+                    meanCards[idx].setBackgroundColor(color);
                     wordCards[idx].setEnabled(true);
                     meanCards[idx].setEnabled(true);
                 }

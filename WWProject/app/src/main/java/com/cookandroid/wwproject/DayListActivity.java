@@ -23,8 +23,8 @@ import java.util.GregorianCalendar;
 
 public class DayListActivity extends AppCompatActivity {
 
-    static String[] words = new String[200];
-    static String[] meaning = new String[200];
+    static String[] words = new String[300];
+    static String[] meaning = new String[300];
 
     GregorianCalendar today = new GregorianCalendar ( );
     int day = today.get ( today.DAY_OF_MONTH );

@@ -17,8 +17,8 @@ import java.util.List;
 
 public class DayResultActivity extends Activity {
 
-    static String[] words = new String[200];
-    static String[] meaning = new String[200];
+    static String[] words = new String[300];
+    static String[] meaning = new String[300];
 
     //boolean[] isCorrect = new boolean[11];
 

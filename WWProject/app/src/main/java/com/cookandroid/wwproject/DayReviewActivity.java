@@ -21,8 +21,8 @@ import java.util.Random;
 public class DayReviewActivity extends Activity {
 
     /** 단어 저장된 배열 */
-    static String[] words = new String[200];
-    static String[] meaning = new String[200];
+    static String[] words = new String[300];
+    static String[] meaning = new String[300];
 
     TextView tvWord;
 

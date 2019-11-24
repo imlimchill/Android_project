@@ -63,7 +63,7 @@
             android:layout_weight="1"
             android:layout_margin="20dp"
             android:background="#aa6f6f"
-            android:text="오늘의 단어"
+            android:text="복습하기"
             android:textSize="30dp"/>
         <Button
             android:id="@+id/btnWordTest"

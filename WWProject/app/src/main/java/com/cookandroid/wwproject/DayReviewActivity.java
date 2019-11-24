@@ -90,13 +90,11 @@ public class DayReviewActivity extends Activity {
                 cnt++;
 
                 if (pos == random[0]){
-                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
                     if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
-                    //isCorrect[pos] = false;
+
                 }
 
                 pos++;
@@ -145,13 +143,11 @@ public class DayReviewActivity extends Activity {
                 cnt++;
 
                 if (pos == random[1]){
-                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
                     if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
-                    //isCorrect[pos] = false;
+
                 }
 
                 pos++;
@@ -200,13 +196,11 @@ public class DayReviewActivity extends Activity {
                 cnt++;
 
                 if (pos == random[2]){
-                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
                     if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
-                    //isCorrect[pos] = false;
+
                 }
 
                 pos++;
@@ -255,13 +249,11 @@ public class DayReviewActivity extends Activity {
                 cnt++;
 
                 if (pos == random[3]){
-                    Toast.makeText(getApplicationContext(), "정답", Toast.LENGTH_SHORT).show();
                     if(cnt - 1 != 10) {
                         isCorrect[cnt - 1] = true;
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "오답", Toast.LENGTH_SHORT).show();
-                    //isCorrect[pos] = false;
+
                 }
 
                 pos++;

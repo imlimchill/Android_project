@@ -93,7 +93,7 @@ public class DayListActivity extends AppCompatActivity {
                 dayDialog.setAdapter(adapterWord, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
+                        return;
                     }
                 });
 

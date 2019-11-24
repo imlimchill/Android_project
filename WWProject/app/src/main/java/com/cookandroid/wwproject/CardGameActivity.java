@@ -126,12 +126,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[0]) == pos + (meaningN[0])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[0].setBackgroundResource(R.drawable.yes);
                             meanCards[0].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -141,12 +140,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[0]) == pos + (meaningN[1])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[0].setBackgroundResource(R.drawable.yes);
                             meanCards[1].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -156,12 +154,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[0]) == pos + (meaningN[2])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[0].setBackgroundResource(R.drawable.yes);
                             meanCards[2].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -171,12 +168,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[0]) == pos + (meaningN[3])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[0].setBackgroundResource(R.drawable.yes);
                             meanCards[3].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -186,12 +182,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[0]) == pos + (meaningN[4])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[0].setBackgroundResource(R.drawable.yes);
                             meanCards[4].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -206,12 +201,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[1]) == pos + (meaningN[0])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[1].setBackgroundResource(R.drawable.yes);
                             meanCards[0].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -221,12 +215,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[1]) == pos + (meaningN[1])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[1].setBackgroundResource(R.drawable.yes);
                             meanCards[1].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -236,12 +229,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[1]) == pos + (meaningN[2])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[1].setBackgroundResource(R.drawable.yes);
                             meanCards[2].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -251,12 +243,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[1]) == pos + (meaningN[3])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[1].setBackgroundResource(R.drawable.yes);
                             meanCards[3].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -266,12 +257,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[1]) == pos + (meaningN[4])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[1].setBackgroundResource(R.drawable.yes);
                             meanCards[4].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -286,12 +276,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[2]) == pos + (meaningN[0])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[2].setBackgroundResource(R.drawable.yes);
                             meanCards[0].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -301,12 +290,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[2]) == pos + (meaningN[1])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[2].setBackgroundResource(R.drawable.yes);
                             meanCards[1].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -316,12 +304,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[2]) == pos + (meaningN[2])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[2].setBackgroundResource(R.drawable.yes);
                             meanCards[2].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -331,12 +318,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[2]) == pos + (meaningN[3])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[2].setBackgroundResource(R.drawable.yes);
                             meanCards[3].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -346,12 +332,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[2]) == pos + (meaningN[4])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[2].setBackgroundResource(R.drawable.yes);
                             meanCards[4].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -366,12 +351,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[3]) == pos + (meaningN[0])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[3].setBackgroundResource(R.drawable.yes);
                             meanCards[0].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -381,12 +365,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[3]) == pos + (meaningN[1])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[3].setBackgroundResource(R.drawable.yes);
                             meanCards[1].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -396,12 +379,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[3]) == pos + (meaningN[2])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[3].setBackgroundResource(R.drawable.yes);
                             meanCards[2].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -411,12 +393,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[3]) == pos + (meaningN[3])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[3].setBackgroundResource(R.drawable.yes);
                             meanCards[3].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -426,12 +407,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[3]) == pos + (meaningN[4])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[3].setBackgroundResource(R.drawable.yes);
                             meanCards[4].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -446,12 +426,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[4]) == pos + (meaningN[0])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[4].setBackgroundResource(R.drawable.yes);
                             meanCards[0].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -461,12 +440,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[4]) == pos + (meaningN[1])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[4].setBackgroundResource(R.drawable.yes);
                             meanCards[1].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -476,12 +454,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[4]) == pos + (meaningN[2])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[4].setBackgroundResource(R.drawable.yes);
                             meanCards[2].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -491,12 +468,11 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[4]) == pos + (meaningN[3])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[4].setBackgroundResource(R.drawable.yes);
                             meanCards[3].setBackgroundResource(R.drawable.yes);
                             CCont++;
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }
@@ -506,11 +482,10 @@ public class CardGameActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         if(pos + (wordN[4]) == pos + (meaningN[4])) {
-                            Toast.makeText(getApplicationContext(), "눌린다", Toast.LENGTH_SHORT).show();
                             wordCards[4].setBackgroundResource(R.drawable.yes);
                             meanCards[4].setBackgroundResource(R.drawable.yes);
                         } else {
-                            Toast.makeText(getApplicationContext(), "틀렸다", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "틀렸습니다.", Toast.LENGTH_SHORT).show();
                             WCount++;
                         }
                     }

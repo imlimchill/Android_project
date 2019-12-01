@@ -34,10 +34,10 @@ public class ReceiverActivity extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "default");
 
 
-        //OREO API 26 이상에서는 채널 필요
+
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
 
-            builder.setSmallIcon(R.drawable.ic_launcher_foreground); //mipmap 사용시 Oreo 이상에서 시스템 UI 에러남
+            builder.setSmallIcon(R.drawable.ic_launcher_foreground);
 
 
             String channelName ="매일 알람 채널";
@@ -51,7 +51,7 @@ public class ReceiverActivity extends BroadcastReceiver {
                 // 노티피케이션 채널을 시스템에 등록
                 notificationManager.createNotificationChannel(channel);
             }
-        }else builder.setSmallIcon(R.mipmap.ic_launcher); // Oreo 이하에서 mipmap 사용하지 않으면 Couldn't create icon: StatusBarIcon 에러남
+        }else builder.setSmallIcon(R.mipmap.ic_launcher);
 
 
         builder.setAutoCancel(true)
@@ -59,8 +59,8 @@ public class ReceiverActivity extends BroadcastReceiver {
                 .setWhen(System.currentTimeMillis())
 
                 .setTicker("{Time to watch some cool stuff!}")
-                .setContentTitle("상태바 드래그시 보이는 타이틀")
-                .setContentText("상태바 드래그시 보이는 서브타이틀")
+                .setContentTitle("Every Word!")
+                .setContentText("공부 할 시간이에요!")
                 .setContentInfo("INFO")
                 .setContentIntent(pendingI);
 

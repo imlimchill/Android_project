@@ -4,8 +4,13 @@
 
     <application
         android:allowBackup="true"
+<<<<<<< HEAD
+        android:icon="@drawable/ewicon"
+        android:label="Every Word"
+=======
         android:icon="@mipmap/icon"
         android:label="every word"
+>>>>>>> a89875b5839021884af1b387b7e91376672aba47
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

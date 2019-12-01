@@ -32,16 +32,19 @@ public class AlarmActivity extends Activity {
         final TimePicker picker = (TimePicker)findViewById(R.id.timepicker);
         picker.setIs24HourView(true);
 
-        SharedPreferences sharedPreferences = getSharedPreferences("daily alarm", MODE_PRIVATE);
-        long millis = sharedPreferences.getLong("nextNotifyTime", Calendar.getInstance().getTimeInMillis());
+        SharedPreferences spre = getSharedPreferences("daily alarm", MODE_PRIVATE);
+        long millis = spre.getLong("nextNotifyTime", Calendar.getInstance().getTimeInMillis());
 
+        //현재시간을 가져옴
         Calendar nextNotifyTime = new GregorianCalendar();
         nextNotifyTime.setTimeInMillis(millis);
 
+        //푸시알림 현재 시간설정
         Date nextDate = nextNotifyTime.getTime();
         String date_text = new SimpleDateFormat("yyyy년 MM월 dd일 EE요일 a hh시 mm분 ", Locale.getDefault()).format(nextDate);
         Toast.makeText(getApplicationContext(), date_text + "으로 알람이 설정되었습니다", Toast.LENGTH_SHORT).show();
 
+        //이전에 설정한 값으로 timepicker초기화
         Date currentTime = nextNotifyTime.getTime();
         SimpleDateFormat HourFormat = new SimpleDateFormat("kk", Locale.getDefault());
         SimpleDateFormat MinuteFormat = new SimpleDateFormat("mm", Locale.getDefault());
@@ -58,6 +61,8 @@ public class AlarmActivity extends Activity {
             picker.setCurrentHour(pre_hour);
             picker.setCurrentMinute(pre_minute);
         }
+
+
 
         Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
@@ -84,18 +89,19 @@ public class AlarmActivity extends Activity {
                     am_pm="AM";
                 }
 
-                // 현재 지정된 시간으로 알람 시간 설정
+                // 현재 지정된 시간으로 알람 시간 설정후 저장
                 Calendar calendar = Calendar.getInstance();
                 calendar.setTimeInMillis(System.currentTimeMillis());
                 calendar.set(Calendar.HOUR_OF_DAY, hour_24);
                 calendar.set(Calendar.MINUTE, minute);
                 calendar.set(Calendar.SECOND, 0);
 
-                // 이미 지난 시간을 지정했다면 다음날 같은 시간으로 설정
+                // 이미 지난 시간을 지정했다면 다음날 같은 시간으로 설정후 저장
                 if (calendar.before(Calendar.getInstance())) {
                     calendar.add(Calendar.DATE, 1);
                 }
 
+                //지정시간설정
                 Date currentDateTime = calendar.getTime();
                 String date_text = new SimpleDateFormat("yyyy년 MM월 dd일 EE요일 a hh시 mm분 ", Locale.getDefault()).format(currentDateTime);
                 Toast.makeText(getApplicationContext(),date_text + "으로 알람이 설정되었습니다!", Toast.LENGTH_SHORT).show();

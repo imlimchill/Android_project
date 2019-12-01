@@ -26,7 +26,7 @@ public class BootReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if (Objects.equals(intent.getAction(), "android.intent.action.BOOT_COMPLETED")) {
 
-            // on device boot complete, reset the alarm
+            // 부팅완료시 알람초기화
             Intent alarmIntent = new Intent(context, ReceiverActivity.class);
             PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
 

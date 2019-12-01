@@ -44,7 +44,7 @@ public class ToReviewActivity extends Activity {
         setContentView(R.layout.today_review);
         setTitle("복습");
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 
@@ -68,7 +68,8 @@ public class ToReviewActivity extends Activity {
         final String meanings[] = intent.getStringArrayExtra("meanings");
         final boolean isCorrect[] = intent.getBooleanArrayExtra("correct");
 
-        pos =  day * 10 - 11 + cnt;
+        pos =  pos + cnt;
+
 
         tvWord.setText(words[pos]);
         for (int idx = 0; idx < 4; idx++) {

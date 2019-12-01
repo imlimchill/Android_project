@@ -37,7 +37,7 @@ public class DayListActivity extends AppCompatActivity {
 
         readWordData();
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 
@@ -47,7 +47,7 @@ public class DayListActivity extends AppCompatActivity {
 
         final ArrayList<String> Items = new ArrayList<String>(); // 빈 데이터 리스트 생성
 
-        for (int idx = 1; idx <= 20; idx++) {
+        for (int idx = 1; idx <= 30; idx++) {
             Items.add("" + idx + " 일");
         }
 

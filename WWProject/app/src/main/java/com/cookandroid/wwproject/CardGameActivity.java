@@ -90,7 +90,7 @@ public class CardGameActivity extends AppCompatActivity {
 
         readWordData();
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 

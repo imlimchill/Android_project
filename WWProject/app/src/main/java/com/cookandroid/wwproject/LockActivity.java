@@ -44,7 +44,7 @@ public class LockActivity extends Activity {
 
         readWordData();
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 

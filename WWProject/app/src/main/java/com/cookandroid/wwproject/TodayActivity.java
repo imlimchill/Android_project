@@ -49,7 +49,7 @@ public class TodayActivity extends Activity {
         /** 뜻 저장할 스트링배열 선언, 초기화 */
         final String[] mean = new String[11];
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 

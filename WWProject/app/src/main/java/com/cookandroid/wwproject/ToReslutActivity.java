@@ -32,7 +32,7 @@ public class ToReslutActivity extends Activity {
 
         readWordData();
 
-        if(day == 0) {
+        if(day == 1) {
             pos = 0;
         }
 
